@@ -21,7 +21,7 @@ namespace git
             Console.WriteLine(D20(pirmas));
             Console.WriteLine(D10(pirmas));
             Console.WriteLine(D6(pirmas));
-            Console.WriteLine(NuoIki(pirmas, antras));
+            Console.WriteLine(NuoIki(8, 18));
 
             Console.ReadKey();
         }
@@ -80,15 +80,15 @@ namespace git
             skaicius = new Random().Next(0, 6);
             return skaicius;
         }
-        static int NuoIki(int pirmas, int antras)
+        static int NuoIki(int nuo, int iki)
         {
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Iveskite skaiciu nuo " + pirmas + " iki " + antras);
+                Console.WriteLine("Iveskite skaiciu nuo " + nuo + " iki " + iki);
                 int skaicius = Convert.ToInt32(Console.ReadLine());
 
-                if (skaicius < pirmas || skaicius > antras)
+                if (skaicius < nuo || skaicius > iki)
                 {
                     Console.WriteLine("Ivedimas neteisingas. Veskite is naujo");
                 }
