@@ -19,8 +19,6 @@ namespace git
             Console.WriteLine(InRange(pirmas, antras, trecias));
             Console.WriteLine(IsPrimal(pirmas));
             Console.WriteLine(D20(pirmas));
-            Console.WriteLine(D10(pirmas));
-            Console.WriteLine(D6(pirmas));
             Console.WriteLine(NuoIki(8, 18));
 
             Console.ReadKey();
@@ -68,16 +66,6 @@ namespace git
         static int D20(int skaicius)
         {
             skaicius = new Random().Next(0, 20);
-            return skaicius;
-        }
-        static int D10(int skaicius)
-        {
-            skaicius = new Random().Next(0, 10);
-            return skaicius;
-        }
-        static int D6(int skaicius)
-        {
-            skaicius = new Random().Next(0, 6);
             return skaicius;
         }
         static int NuoIki(int nuo, int iki)
